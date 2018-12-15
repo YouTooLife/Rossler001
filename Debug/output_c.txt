@@ -1,0 +1,40 @@
+Open On-Chip Debugger 0.10.0-dev-00011-g46c94c8 (2018-09-06-08:44)
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.org/doc/doxygen/bugs.html
+srst_only separate srst_nogate srst_open_drain connect_assert_srst
+Info : The selected transport took over low-level target control. The results might differ compared to plain JTAG/SWD
+adapter_nsrst_delay: 100
+adapter speed: 1800 kHz
+Info : clock speed 1800 kHz
+Info : STLINK v2.1 JTAG v32 API v2 M22 VID 0x0483 PID 0x374B
+Info : using stlink api v2
+Info : Target voltage: 3.249572
+Info : Stlink adapter speed set to 1800 kHz
+Info : STM32F446RETx.cpu: hardware has 6 breakpoints, 4 watchpoints
+Info : Stlink adapter speed set to 1800 kHz
+adapter speed: 1800 kHz
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x080032ac msp: 0x20020000
+configuring PLL
+Info : Stlink adapter speed set to 4000 kHz
+adapter speed: 4000 kHz
+** Programming Started **
+auto erase enabled
+Info : device id = 0x10006421
+Info : flash size = 512kbytes
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x20000046 msp: 0x20020000
+wrote 32768 bytes from file Debug/Rossler001.elf in 1.068160s (29.958 KiB/s)
+** Programming Finished **
+** Verify Started **
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000002e msp: 0x20020000
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000002e msp: 0x20020000
+verified 19200 bytes in 0.287658s (65.182 KiB/s)
+** Verified OK **
+** Resetting Target **
+Info : Stlink adapter speed set to 1800 kHz
+adapter speed: 1800 kHz
+shutdown command invoked
